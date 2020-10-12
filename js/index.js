@@ -19,8 +19,10 @@ function longestName(hacker1, hacker2) {
     console.log(`The driver has the longest name, it has ${longest} characters`);
   } else if (h1l < h2l) {
     h2l = longest
+    console.log(`It seems that the navigator has the longest name, it has ${longest} characters.`);
+  } else if (h1l === h2l) {
+    console.log(`Wow, you both have equally long names, ${longest} characters!`);
   }
-  console.log(`It seems that the navigator has the longest name, it has ${longest} characters.`);
 };
 longestName(hacker1, hacker2);
 
